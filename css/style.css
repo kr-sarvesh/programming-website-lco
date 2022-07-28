@@ -1,7 +1,239 @@
 /* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background-color: #2827cc;
+}
+
+header {
+  padding: 25px;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 600px;
+  align-items: center;
+}
+
+nav .nav-items .nav-item {
+  cursor: pointer;
+  width: 70px;
+  text-align: center;
+  color: white;
+}
+
+nav .nav-items .nav-item:hover {
+  border-bottom: 2px solid white;
+}
+nav .nav-items .nav-item-active {
+  width: 90px;
+  padding: 2px 0;
+  cursor: pointer;
+  background: white;
+  text-align: center;
+}
+nav .nav-items .nav-item-active:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+nav .nav-items .nav-search {
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+nav .nav-items .nav-search:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header .right-side-img {
+  position: absolute;
+  margin-left: 823px;
+}
+.main-header .right-side-img img {
+  width: 620px;
+}
+.header-text {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-text img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.header-text h2 {
+  color: white;
+  font-size: 28px;
+}
+.header-text p {
+  color: white;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.mid-section-container {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.company-items {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.company-items .company-item {
+  text-decoration: none;
+  padding-right: 80px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-card {
+  display: flex;
+}
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-content {
+  margin-left: -45px;
+  width: 950px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  padding-top: 35px;
+  padding-left: 30px;
+}
+
+.faq-content h2 {
+  font-size: 40px;
+}
+
+.faq-content h3 {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.faq-content h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.faq-content button {
+  margin-top: 20px;
+  padding-top: 25px 45px;
+  width: 105px;
+  height: 35px;
+  background-color: #2827cc;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.faq-image {
+  margin-right: -50px;
+}
+.faq-image img {
+  width: 650px;
+  display: absolute;
+  z-index: -1;
+}
+.download-section {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+  align-items: center;
+  height: 300px;
+}
+.download-section > .download-content > h1 {
+  font-size: 50px;
+}
+.download-email input {
+  width: 500px;
+  height: 45px;
+  border-radius: 25px;
+  border: transparent;
+  background-color: wheat;
+  text-align: center;
+}
+
+.download-email form button {
+  height: 40px;
+  padding: auto 30px;
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+}
+.footer-section {
+  background-color: #2827cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 150px;
+}
+
+.footer-section .list-items {
+  display: flex;
+  margin-top: 20px;
+  list-style: none;
+}
+.footer-section .list-items .list-item {
+  width: 125px;
+
+  align-items: center;
+  display: flex;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.footer-section .list-items .list-item:hover {
+  border-bottom: 2px solid white;
+}
+.footer-section .footer-logos {
+  display: flex;
+  justify-content: end;
+  width: 330px;
+  height: 30px;
+  gap: 100px;
+}
+.footer-right {
+  margin-top: 20px;
+}
+.footer-right .footer-logos .footer-logo {
+  cursor: pointer;
 }
