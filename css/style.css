@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
 * {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  border: 5px solid black;
+  font-family: sans-serif;
 }
 
 .main-container {
@@ -33,13 +27,16 @@ nav .nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 600px;
 }
 
 nav .nav-items .nav-item {
   cursor: pointer;
-  width: 70px;
+  max-width: 70px;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav .nav-items .nav-item:hover {
@@ -332,9 +329,7 @@ nav .nav-items .nav-search:hover {
   justify-content: space-between;
   gap: 50px;
 }
-.footer-right {
-  margin-top: 20px;
-}
+
 .footer-right .footer-logos .footer-logo {
   cursor: pointer;
 }
@@ -357,7 +352,6 @@ nav .nav-items .nav-search:hover {
   .nav-items {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     overflow: hidden;
   }
   .nav-items .nav-item {
